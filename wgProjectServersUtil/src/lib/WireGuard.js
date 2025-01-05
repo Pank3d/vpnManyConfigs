@@ -241,7 +241,7 @@ Endpoint = ${WG_HOST}:${WG_CONFIG_PORT}`;
 
     // Calculate next IP
     let address;
-    for (let i = 2; i < 255; i++) {
+    for (let i = 2; i < 65_556; i++) {
       const client = Object.values(config.clients).find((client) => {
         return client.address === WG_DEFAULT_ADDRESS.replace('x', i);
       });
